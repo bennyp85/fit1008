@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Resources;
 
 namespace Prac3
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
@@ -15,28 +16,17 @@ namespace Prac3
 
             while (counter <= 8)
             {
-//                Console.WriteLine("Counter {0}", counter);
-//                TestSumItem(counter);
-//                
-//                
-//                counter *= 2;
-//                watch.Stop();
-//                Console.WriteLine(watch.ElapsedMilliseconds);
-
                 List<int> arr = new List<int>();
-
                 for (int i = 1; i <= counter; i++)
                 {
                     arr.Add(i);
                 }
 
-                BubbleSort(arr);
+                FindMAxSumInterval(arr);
                 watch.Stop();
                 Console.WriteLine("{0} taken", watch.ElapsedMilliseconds);
                 counter *= 2;
             }
-
-            
         }
 
         static void TestSumItem(int n)
@@ -46,7 +36,6 @@ namespace Prac3
             {
                 sum += i;
             }
-
             Console.WriteLine("{0}", sum);
         }
 
@@ -66,12 +55,34 @@ namespace Prac3
                         }
                     }
                 }
-
                 Console.WriteLine("{0} items", arr.Count);
                 foreach (var VARIABLE in arr)
                 {
                     Console.WriteLine("{0}", VARIABLE);
                 }
+        }
+
+        static void FindMAxSumInterval(List<int> arr)
+        {
+            int max_sum = arr.Min();
+            
+            for (int i = 0; i < arr.Count; i++)
+            {
+                List<int> sumList = new List<int>();
+                sumList.Add(arr[i]);
+                for (int j = i+1; j < arr.Count; j++)
+                {
+                    sumList.Add(arr[j]);
+                    int sum = sumList.Sum();
+                    
+                    if (sum > max_sum)
+                    {
+                        max_sum = sum;
+                    }
+                }
+            }
+
+            Console.WriteLine("{0}", max_sum);
         }
     }
 }
