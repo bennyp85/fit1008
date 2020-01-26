@@ -1,0 +1,11 @@
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/bin/Debug/netcoreapp3.0/Prac3
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/bin/Debug/netcoreapp3.0/Prac3.deps.json
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/bin/Debug/netcoreapp3.0/Prac3.runtimeconfig.json
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/bin/Debug/netcoreapp3.0/Prac3.runtimeconfig.dev.json
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/bin/Debug/netcoreapp3.0/Prac3.dll
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/bin/Debug/netcoreapp3.0/Prac3.pdb
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/obj/Debug/netcoreapp3.0/Prac3.csprojAssemblyReference.cache
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/obj/Debug/netcoreapp3.0/Prac3.AssemblyInfoInputs.cache
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/obj/Debug/netcoreapp3.0/Prac3.AssemblyInfo.cs
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/obj/Debug/netcoreapp3.0/Prac3.dll
+/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac3/obj/Debug/netcoreapp3.0/Prac3.pdb
