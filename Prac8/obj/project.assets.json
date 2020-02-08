@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac8/Prac8.csproj",
+      "projectUniqueName": "/Users/benjamin/Desktop/FIT1008/Prac8/Prac8.csproj",
       "projectName": "Prac8",
-      "projectPath": "/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac8/Prac8.csproj",
+      "projectPath": "/Users/benjamin/Desktop/FIT1008/Prac8/Prac8.csproj",
       "packagesPath": "/Users/benjamin/.nuget/packages/",
-      "outputPath": "/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac8/obj/",
+      "outputPath": "/Users/benjamin/Desktop/FIT1008/Prac8/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/benjamin/.config/NuGet/NuGet.Config"

@@ -9,3 +9,14 @@
 /Users/benjamin/Google Drive/HackerRank/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.AssemblyInfo.cs
 /Users/benjamin/Google Drive/HackerRank/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.dll
 /Users/benjamin/Google Drive/HackerRank/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.pdb
+/Users/benjamin/Desktop/FIT1008/Prac9/bin/Debug/netcoreapp3.0/Prac9
+/Users/benjamin/Desktop/FIT1008/Prac9/bin/Debug/netcoreapp3.0/Prac9.deps.json
+/Users/benjamin/Desktop/FIT1008/Prac9/bin/Debug/netcoreapp3.0/Prac9.runtimeconfig.json
+/Users/benjamin/Desktop/FIT1008/Prac9/bin/Debug/netcoreapp3.0/Prac9.runtimeconfig.dev.json
+/Users/benjamin/Desktop/FIT1008/Prac9/bin/Debug/netcoreapp3.0/Prac9.dll
+/Users/benjamin/Desktop/FIT1008/Prac9/bin/Debug/netcoreapp3.0/Prac9.pdb
+/Users/benjamin/Desktop/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.csprojAssemblyReference.cache
+/Users/benjamin/Desktop/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.AssemblyInfoInputs.cache
+/Users/benjamin/Desktop/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.AssemblyInfo.cs
+/Users/benjamin/Desktop/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.dll
+/Users/benjamin/Desktop/FIT1008/Prac9/obj/Debug/netcoreapp3.0/Prac9.pdb

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac9/Prac9.csproj",
+    "projectUniqueName": "/Users/benjamin/Desktop/FIT1008/Prac9/Prac9.csproj",
     "projectName": "Prac9",
-    "projectPath": "/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac9/Prac9.csproj",
-    "outputPath": "/Users/benjamin/Google Drive/HackerRank/FIT1008/Prac9/obj/",
+    "projectPath": "/Users/benjamin/Desktop/FIT1008/Prac9/Prac9.csproj",
+    "outputPath": "/Users/benjamin/Desktop/FIT1008/Prac9/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"
