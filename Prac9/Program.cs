@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Xml.Serialization;
 using System.Xml.Xsl;
@@ -10,9 +11,21 @@ namespace Prac9
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            var root = new TreeNode();
+            BinarySearchTree bst = new BinarySearchTree(root);
+            
+            // adding '0' ? root value?
+            bst.Insert(10);
+            bst.Insert(2);
+            // not printing '15'
+            bst.Insert(15);
+            bst.Insert(4);
+            bst.Insert(25);
+            bst.Inorder(root);
             
 //            using (StreamReader sr = new StreamReader(@"/Users/benjamin/Desktop/Alphabet.txt")) 
 //            {
@@ -126,23 +139,37 @@ namespace Prac9
 //                Console.WriteLine(b);
 //            }
             
-            List<int> unsorted = new List<int>();
-            List<int> sorted;
-            
-            Random random = new Random();
+//            List<int> unsorted = new List<int>();
 
-            for (int i = 0; i < 10; i++)
+
+//            Random random = new Random();
+//
+//            for (int i = 0; i < 10; i++)
+//            {
+//                unsorted.Add(random.Next(0, 100));
+//            }
+            List<int> unsorted = new List<int> { 21, 46, 46, 55, 17, 21, 55, 55 };
+
+            var sorted = MergeSort(unsorted);
+            var frequency = sorted.GroupBy(x => x).ToDictionary(x => x.Key, x => x.Count());
+            foreach (var VARIABLE in frequency)
             {
-                unsorted.Add(random.Next(0, 100));
+                Console.WriteLine(VARIABLE);
             }
 
-            sorted = MergeSort(unsorted);
+//            foreach (var VARIABLE in sorted)
+//            {
+//                Console.WriteLine(VARIABLE + " ");
+//            }
 
-            foreach (var VARIABLE in sorted)
-            {
-                Console.WriteLine(VARIABLE + " ");
-            }
-
+//            IEnumerable<int> distinctAges = sorted.Distinct();
+//
+//            Console.WriteLine("Distinct Values:");
+//
+//            foreach (int age in distinctAges)
+//            {
+//                Console.WriteLine(age);
+//            }
         }
         
             
@@ -208,4 +235,114 @@ namespace Prac9
             return result;
         }
     }
+
+    public class TreeNode
+    {
+        public int Data;
+        public TreeNode Left;
+        public TreeNode Right;
+        public void PrintNode()
+        {
+            Console.WriteLine(Data + " ");
+        }
+    }
+    
+    class BinarySearchTree
+    {
+        public TreeNode TNode { get; set; }
+
+        public BinarySearchTree(TreeNode treeNode)
+        {
+            TNode = treeNode;
+            treeNode = null;
+        }
+
+        // is Insert placing values in the correct position
+        public void Insert(int i)
+        {
+            TreeNode newNode = new TreeNode();
+            newNode.Data = i;
+            if (TNode == null)
+            {
+                TNode = newNode;
+            }
+            else
+            {
+                TreeNode current = TNode;
+                TreeNode parent;
+                //if i is less than parent add to left, else add tor ight
+                while (true)
+                {
+                    parent = current;
+                    if (i < current.Data)
+                    {
+                        // add to left node
+                        current = current.Left;
+                        if (current == null)
+                        {
+                            //new node
+                            parent.Left = newNode;
+                            break;
+                        }
+                    }
+
+                    if (i > current.Data)
+                    {
+                        current = current.Right;
+                        if (current == null)
+                        {
+                            parent.Right = newNode;
+                            break;
+                        }
+                    }
+
+                }
+            }
+        }
+//        public void InOrder()
+//        {
+//            Stack<TreeNode> s = new Stack<TreeNode>();
+//            TreeNode curr = root;
+//            while (curr != null || s.Count > 0)
+//            {
+//
+//                /* Reach the left most Node of the  
+//                curr Node */
+//                while (curr != null)
+//                {
+//                    /* place pointer to a tree node on  
+//                       the stack before traversing  
+//                      the node's left subtree */
+//                    s.Push(curr);
+//                    curr = curr.Left;
+//                }
+//
+//                /* Current must be NULL at this point */
+//                curr = s.Pop();
+//
+//                Console.Write(curr.Data + " ");
+//
+//                /* we have visited the node and its  
+//                   left subtree.  Now, it's right  
+//                   subtree's turn */
+//                curr = curr.Right;
+//            }
+//        }
+        public void Inorder(TreeNode node) 
+        { 
+            if (node == null) 
+                return; 
+  
+            /* first recur on left child */
+            Inorder(node.Left); 
+  
+            /* then print the data of node */
+            Console.Write(node.Data + " "); 
+  
+            /* now recur on right child */
+            Inorder(node.Right); 
+        }
+
+    }
 }
+    
