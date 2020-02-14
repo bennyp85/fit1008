@@ -18,14 +18,14 @@ namespace Prac9
             var root = new TreeNode();
             BinarySearchTree bst = new BinarySearchTree(root);
             
-            // adding '0' ? root value?
+            // adding '0' - root value?
             bst.Insert(10);
             bst.Insert(2);
             // not printing '15'
             bst.Insert(15);
             bst.Insert(4);
             bst.Insert(25);
-            bst.Inorder(root);
+            bst.InOrder(root);
             
 //            using (StreamReader sr = new StreamReader(@"/Users/benjamin/Desktop/Alphabet.txt")) 
 //            {
@@ -238,6 +238,7 @@ namespace Prac9
 
     public class TreeNode
     {
+        public int Key;
         public int Data;
         public TreeNode Left;
         public TreeNode Right;
@@ -249,12 +250,11 @@ namespace Prac9
     
     class BinarySearchTree
     {
-        public TreeNode TNode { get; set; }
+        public TreeNode Node { get; set; }
 
         public BinarySearchTree(TreeNode treeNode)
         {
-            TNode = treeNode;
-            treeNode = null;
+            Node = treeNode;
         }
 
         // is Insert placing values in the correct position
@@ -262,18 +262,17 @@ namespace Prac9
         {
             TreeNode newNode = new TreeNode();
             newNode.Data = i;
-            if (TNode == null)
+            if (Node == null)
             {
-                TNode = newNode;
+                Node = newNode;
             }
             else
             {
-                TreeNode current = TNode;
-                TreeNode parent;
+                TreeNode current = Node;
                 //if i is less than parent add to left, else add tor ight
                 while (true)
                 {
-                    parent = current;
+                    var parent = current;
                     if (i < current.Data)
                     {
                         // add to left node
@@ -328,19 +327,19 @@ namespace Prac9
 //                curr = curr.Right;
 //            }
 //        }
-        public void Inorder(TreeNode node) 
+        public void InOrder(TreeNode node) 
         { 
             if (node == null) 
                 return; 
   
             /* first recur on left child */
-            Inorder(node.Left); 
+            InOrder(node.Left); 
   
             /* then print the data of node */
             Console.Write(node.Data + " "); 
   
             /* now recur on right child */
-            Inorder(node.Right); 
+            InOrder(node.Right); 
         }
 
     }
