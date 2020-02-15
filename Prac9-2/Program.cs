@@ -228,12 +228,12 @@ namespace Prac9_2
 
         private void DisplayTree(Node root)
         {
-            if (root == null)
-            {
-                DisplayTree(root.Left);
-                Console.WriteLine(root.Data + " ");
-                DisplayTree(root.Right);
-            }
+            if (root == null) return;
+            
+            DisplayTree(root.Left);
+            Console.WriteLine(root.Data + " ");
+            DisplayTree(root.Right);
+        
         }
 
         public void DisplayTree()
