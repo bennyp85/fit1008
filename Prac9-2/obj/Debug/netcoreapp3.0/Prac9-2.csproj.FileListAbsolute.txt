@@ -1,0 +1,11 @@
+/Users/benjamin/Desktop/FIT1008/Prac9-2/bin/Debug/netcoreapp3.0/Prac9-2
+/Users/benjamin/Desktop/FIT1008/Prac9-2/bin/Debug/netcoreapp3.0/Prac9-2.deps.json
+/Users/benjamin/Desktop/FIT1008/Prac9-2/bin/Debug/netcoreapp3.0/Prac9-2.runtimeconfig.json
+/Users/benjamin/Desktop/FIT1008/Prac9-2/bin/Debug/netcoreapp3.0/Prac9-2.runtimeconfig.dev.json
+/Users/benjamin/Desktop/FIT1008/Prac9-2/bin/Debug/netcoreapp3.0/Prac9-2.dll
+/Users/benjamin/Desktop/FIT1008/Prac9-2/bin/Debug/netcoreapp3.0/Prac9-2.pdb
+/Users/benjamin/Desktop/FIT1008/Prac9-2/obj/Debug/netcoreapp3.0/Prac9-2.csprojAssemblyReference.cache
+/Users/benjamin/Desktop/FIT1008/Prac9-2/obj/Debug/netcoreapp3.0/Prac9-2.AssemblyInfoInputs.cache
+/Users/benjamin/Desktop/FIT1008/Prac9-2/obj/Debug/netcoreapp3.0/Prac9-2.AssemblyInfo.cs
+/Users/benjamin/Desktop/FIT1008/Prac9-2/obj/Debug/netcoreapp3.0/Prac9-2.dll
+/Users/benjamin/Desktop/FIT1008/Prac9-2/obj/Debug/netcoreapp3.0/Prac9-2.pdb
